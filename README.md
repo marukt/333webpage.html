@@ -20,19 +20,19 @@
 <body>
     <table>
         <tr>
-            <td><img src="1.png" alt=" 1"></td>
-            <td><img src="2.jpg" alt="Image 2"></td>
-            <td><img src="3.jpg" alt="Image 3"></td>
+            <td><img src="image1.png" alt=" 1"></td>
+            <td><img src="image2.png" alt="Image 2"></td>
+            <td><img src="image3.png" alt="Image 3"></td>
         </tr>
         <tr>
-            <td><img src="4.jpg" alt="Image 4"></td>
-            <td><img src="5.jpg" alt="Image 5"></td>
-            <td><img src="6.jpg" alt="Image 6"></td>
+            <td><img src="image4.png" alt="Image 4"></td>
+            <td><img src="image5.png" alt="Image 5"></td>
+            <td><img src="image6.png" alt="Image 6"></td>
         </tr>
         <tr>
-            <td><img src="image7.jpg" alt="Image 7"></td>
-            <td><img src="image8.jpg" alt="Image 8"></td>
-            <td><img src="image9.jpg" alt="Image 9"></td>
+            <td><img src="image7.png" alt="Image 7"></td>
+            <td><img src="image8.png" alt="Image 8"></td>
+            <td><img src="image9.png" alt="Image 9"></td>
         </tr>
     </table>
     <button onclick="randomizeImages()">Spin</button>
@@ -42,7 +42,7 @@
             const images = document.querySelectorAll('img');
             images.forEach(image => {
                 const randomNum = Math.floor(Math.random() * 9) + 1;
-                image.src = `image${randomNum}.jpg`;
+                image.src = `image${randomNum}.png`;
             });
         }
     </script>
